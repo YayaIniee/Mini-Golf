@@ -1,13 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{2ed25e08-4f0e-9a96-100a-b2f19a4f14b4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AimingRig", "AimingRig.csproj", "{3f3b96df-3d82-5cc8-0930-2488a04a6dd7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{ad70a3a4-95fc-44aa-4abb-538271b05a85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{2ed25e08-4f0e-9a96-100a-b2f19a4f14b4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ed25e08-4f0e-9a96-100a-b2f19a4f14b4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3f3b96df-3d82-5cc8-0930-2488a04a6dd7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3f3b96df-3d82-5cc8-0930-2488a04a6dd7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ad70a3a4-95fc-44aa-4abb-538271b05a85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ad70a3a4-95fc-44aa-4abb-538271b05a85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
