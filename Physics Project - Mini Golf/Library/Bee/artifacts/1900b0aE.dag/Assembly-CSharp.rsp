@@ -355,6 +355,7 @@
 "Assets/BallController.cs"
 "Assets/CameraController.cs"
 "Assets/Goal.cs"
+"Assets/NextLevelButton.cs"
 "Assets/Obstacle.cs"
 "Assets/Outside.cs"
 "Assets/PlayManajer.cs"

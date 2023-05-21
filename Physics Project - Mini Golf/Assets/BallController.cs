@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 public class BallController : MonoBehaviour, IPointerDownHandler
 {
@@ -20,6 +21,8 @@ public class BallController : MonoBehaviour, IPointerDownHandler
 
     public bool ShootingMode { get => shootingMode; }
     public int ShootCount { get => shootCount;}
+
+    public UnityEvent<int> onBallShooted = new UnityEvent<int>();
 
     private void Update()
     {
@@ -80,9 +83,10 @@ public class BallController : MonoBehaviour, IPointerDownHandler
     {
         if(shoot)
         {
-            shootCount += 1;
             shoot = false;
             AddForce(forceDirection * force * forceFactor, ForceMode.Impulse);
+            shootCount += 1;
+            onBallShooted.Invoke(shootCount);
         }
         if(rb.velocity.sqrMagnitude < 0.01f && rb.velocity.sqrMagnitude > 0)
         {
